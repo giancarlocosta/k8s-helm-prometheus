@@ -25,8 +25,8 @@ your target cluster that will be used to overwrite default values of the Chart.
 
     Example deployment to Prod ELK env
     ```
-    helm --kube-context=prod-elk --namespace ops --name prometheus-prod-elk install . --debug --values properties/prod-elk/properties.yaml
-    helm --kube-context=prod-elk --namespace ops upgrade prometheus-prod-elk . --debug --values properties/prod-elk/properties.yaml
+    helm --kube-context=prod-elk --namespace monitor --name prometheus-prod-elk install . --debug --values properties/prod-elk/properties.yaml
+    helm --kube-context=prod-elk --namespace monitor upgrade prometheus-prod-elk . --debug --values properties/prod-elk/properties.yaml
     ```
 
 4. Deploy Prometheus data sources.<br/>
